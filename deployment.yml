@@ -17,9 +17,4 @@ spec:
           image: uya12345/jen12
           ports:
             - containerPort: 80
-          command: ["/bin/sh", "-c"]
-          args:
-            - |
-              echo "Served by $(hostname)" >> /usr/local/apache2/htdocs/index.html && \
-              httpd-foreground
- 
+          
