@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kubepro-deployment
+  name: jen12-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: kubepro
+      app: jen12
   template:
     metadata:
       labels:
-        app: kubepro
+        app: jen12
     spec:
       containers:
-        - name: kubepro
+        - name: jen12
           image: uya12345/jen12
           ports:
             - containerPort: 80
